@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: sandybrown;
+}
+
+.head {
+    position: absolute;
+    top: 20px;
+    left: 600px;
+    transition: all 1s linear;
+    z-index: 2;
+}
+
+.all:hover .head{
+    transform: translateX(300px);
+}
+
+.content {
+    z-index: 1;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    width:500px;
+    height: 625.597px;
+    transition: all 1s linear;
+}
+
+.all:hover .content {
+    text-align: right;
+    top:150px;
+    width:1000px;
+    height: 400px;
+    padding-left:200px ; 
+}

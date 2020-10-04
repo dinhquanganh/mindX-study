@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class person {
+            name; age; sex; address;
+            constructor(name, age, sex, address) {
+                this.name = name;
+                this.age = age;
+                this.sex = sex;
+                this.address = address;
+
+            }
+            say() {
+                console.log('你好');
+            }
+        }
+        class boy extends person {
+            size;
+            constructor(name, age, address, size) {
+                super(name, age, 'male', address);
+                this.size = size;
+            }
+        }
+        class goodboy extends boy {
+            friendZone;
+            constructor(name, age, address, size, friendZone) {
+                super(name, age, address, size);
+                this.friendZone = friendZone;
+            }
+            speak() {
+                console.log('Lô')
+            }
+            static main() {'Alone🙄'}
+        }
+        class badboy extends boy {
+            abruptness;
+            constructor(name, age, address, size, abruptness) {
+                super(name, age, address, size);
+                this.abruptness = abruptness;
+            }
+            speak() {
+                console.log('Chao e ');
+            }
+        }
+        class fboy extends boy {
+            cruel;
+            constructor(name, age, address, size, cruel) {
+                super(name, age, address, size);
+                this.cruel = cruel;
+            }
+            speak() {
+                console.log('Lam k e');
+            }
+        }
+        class lifeboy extends boy {
+            clean;
+            constructor(name, age, address, size, clean) {
+                super(name, age, address, size);
+                this.clean = clean;
+            }
+            speak() {
+                console.log('Rua tay di em');
+            }
+            static main() {console.log('Clean 🥳') };
+        }
+        class crush {
+            firstName;lastName;age;address;
+            constructor (firstName,lastName,age,address) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+                this.address = address;
+            }
+            get getFullName() {
+                return this.lastName+' '+this.firstName;
+            }
+        }
+        let lifeBoy = new lifeboy('Noob', 19, 'HaNoi', 'XXXXXXXXXXL', 'sachse');
+        let myCrush = new crush('Beautiful', 'Girl', 19, 'Nghe An');
+        lifeBoy.speak();
+        lifeboy.main();
+        console.log(lifeBoy);
+        console.log(myCrush.getFullName);
+
+        // cua class: static - attribute; non-static - attribute;
+        // cua obj: static - method; not-static - method;
+    </script>
+</body>
+
+</html>

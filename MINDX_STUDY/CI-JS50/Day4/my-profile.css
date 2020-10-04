@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 40vh;
+    margin-top: 30px;
+}
+#avatar {
+    border-radius: 50%;
+}
+#name {
+    padding: 15px 10px;
+    background-color: red;
+    border-radius: 5px 5px;
+}
+#age {
+    padding: 15px 10px;
+    background-color: rgb(51, 185, 122);
+    border-radius: 5px 5px;
+    color: 
+}

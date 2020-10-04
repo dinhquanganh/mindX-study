@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1</title>
+</head>
+
+<body>
+    <script>
+        let inputNum = Number(prompt('Nhap so chan?'));
+        let checkNum = inputNum / 2;
+        let inputFnum = Number(prompt('Nhap firstNum?'));
+        function findOppositeNumber(x, y) {
+            let find = 0;
+            if (x > y) {find = x - y;}
+            else {find = x + y;}
+            alert(find);
+        }
+        findOppositeNumber(inputFnum,checkNum);
+    </script>
+</body>
+
+</html>

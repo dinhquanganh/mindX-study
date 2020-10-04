@@ -1,0 +1,32 @@
+span{
+    display: inline-block;
+    padding-right: 10px;
+}
+#navbar{
+    background-color: rgb(24, 138, 138);
+    color: #ffffff;
+    font-size:20px;
+    margin-top: 100px;
+}
+.menuItem{
+    padding: 8px;
+    border-left: 1px solid white;
+    border-right:1px solid white ;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.menuItem:hover{
+    background-color: #116674;
+}
+.tag:hover{
+    background-color: #51c2d3;
+}
+.tag{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+#menuItems{
+    margin-left: 275px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input-wrapper label="Ban co nguoi yeu chua???" type="checkbox" value=""></input-wrapper> -->
+    <form-register></form-register>
+</body>
+
+<template id="template-input-wrapper">
+    <div class="input-wrapper">
+        <label for="" id="input-label"></label>
+        <input type="text" id="input-main">
+        <div id="input-error"></div>
+    </div>
+</template>
+
+<template id="template-form-register">
+    <form class="form-register">
+        <h2>Sign in</h2>
+        <input-wrapper label="Tên đăng kí" id="name" type="text" error="" value=""></input-wrapper>
+        <input-wrapper label="Email" id="email" type="email" error="" value=""></input-wrapper>
+        <input-wrapper label="Password" id="password" type="password" error=""></input-wrapper>
+        <input-wrapper label="Password" id="password-confirmation" type="password" error=""></input-wrapper>
+        <button>Sign Up</button>
+    </form>
+</template>
+
+<script src="./js/app.js" type="module"></script>
+
+</html>

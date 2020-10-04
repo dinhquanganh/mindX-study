@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <form-group></form-group>
+</body>
+<template id="input">
+    <div class="input-group">
+        <label for="" id="label"></label>
+        <input type="text" id="ip" />
+        <div id="error"></div>
+    </div>
+</template>
+
+<template id="form-group">
+    <form class="form-group">
+        <input-group id="email" label="Email" type="email"></input-group>
+        <input-group id="password" label="Password" type="password"></input-group>
+        <input id="btnLogin" type="submit" value="GOOO"/>
+    </form>
+</template>
+<script src="./app.js" type="module"></script>
+
+</html>

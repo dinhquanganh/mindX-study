@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+// class: ban thiet ke tao 1 project
+    class person {
+        name;
+        age;
+        sex;
+        appearance;
+        constructor(name,age,sex,appearance) {
+            console.log(name,age,sex,appearance);
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.appearance = appearance;
+        }
+        say() {
+            console.log('f**k your mother');
+        }
+        introduce() {
+            console.log(
+            `Hi, My name is ${this.name}. I'm ${this.age}, ${this.sex} and i'm ${this.appearance}`);
+        }
+    }
+// object: duoc de tu class (instance cua 1 class)
+    let noob = new person('Noob',19,'male','fkboy');
+    noob.say();
+    noob.introduce();
+     </script>
+</body> 
+</html>

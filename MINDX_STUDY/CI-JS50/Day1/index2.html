@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <section>
+      <div class="mainBox">
+        <h1>Like me?</h1>
+      </div>
+      <div id="questionBox">
+        <div class="box" id="y">Yes</div>
+        <div class="box" id="n" onmouseover="troll2()">No</div>
+      </div>
+    </section>
+
+    <script>
+      //   let count = 0;
+      //   function troll() {
+      //     count++;
+      //     if (count > 4) {
+      //       document.getElementById("questionBox").remove();
+      //       return;
+      //     }
+      //     // let $questionBox = document.querySelector("box");
+      //     // if ($questionBox.classList.contains("reverse")) {
+      //     //   $questionBox.classList.remove("reverse");
+      //     // } else {
+      //     //   $questionBox.classList.add("reverse");
+      //     // }
+      //     document.getElementById("questionBox").classList.toggle("reverse");
+      //   }
+
+      function troll2() {
+        let rdW = window.innerWidth - 100;
+        let rdH = window.innerHeight - 100;
+        let $no = document.getElementById("n");
+
+        let rdL = Math.floor(Math.random() * rdW);
+        let rdT = Math.floor(Math.random() * rdH);
+        $no.style.position = `absolute`;
+        $no.style.top = `${rdT}px`;
+        $no.style.left = `${rdL}px`;
+      }
+    </script>
+  </body>
+</html>

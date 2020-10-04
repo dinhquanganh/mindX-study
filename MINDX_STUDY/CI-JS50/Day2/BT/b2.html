@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class information {
+            brand;
+            owner;
+            price;
+            buy_at;
+            constructor(brand,owner,price,buy_at) {
+                this.brand = brand;
+                this.owner = owner;
+                this.price = price;
+                this.buy_at = buy_at;
+            }
+            troll() {
+                console.log('welcome') ;
+            }
+            introduce() {
+                console.log(
+            `Library: 
+            ${this.brand} -- ${this.owner} -- ${this.price} -- ${this.buy_at}`
+            )
+            }
+        }
+        let show = new information('1','a',2000, new Date().toISOString());
+        show.troll();
+        show.introduce();
+        console.log(show);
+
+    </script>
+</body>
+
+</html>

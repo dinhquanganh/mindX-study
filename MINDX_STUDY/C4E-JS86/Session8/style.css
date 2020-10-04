@@ -1,0 +1,18 @@
+.container-left {
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    display: flex;
+    flex-direction: r;
+    justify-content:s;
+    align-items: ;
+    flex-wrap: wrap;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background: white;
+    padding-left: 8px;
+    border: 1px solid black;
+}
+
