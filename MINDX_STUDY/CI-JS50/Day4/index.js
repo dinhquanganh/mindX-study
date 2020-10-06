@@ -1,8 +1,9 @@
+let $template = document.getElementById("my-profile");
 class MyProfile extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    let $template = document.getElementById("my-profile");
+    
     this.shadowRoot.appendChild($template.content.cloneNode(true));
     // Lay ra the co id trong sdr;
 
@@ -10,6 +11,7 @@ class MyProfile extends HTMLElement {
     this.$avatar = this.shadowRoot.getElementById("avatar");
     this.$address = this.shadowRoot.getElementById("address");
     this.$age = this.shadowRoot.getElementById("age");
+    console.log(this.$address)
   }
 
   static get observedAttributes() {
